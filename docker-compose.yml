@@ -21,11 +21,12 @@ services:
       SSMTP_MAILHUB: mailhog:1025
 #      SSMTP_MAILHUB: opensmtpd:25
       PHP_SENDMAIL_PATH: '"/usr/bin/dos2unix -u | /usr/sbin/ssmtp -t -f"'
-#      DB_HOST: $DB_HOST
-#      DB_PORT: $DB_PORT
-#      DB_USER: $DB_USER
-#      DB_PASSWORD: $DB_PASSWORD
-#      DB_NAME: $DB_NAME
+      DB_HOST: $DB_HOST
+      DB_PORT: $DB_PORT
+      DB_USER: $DB_USER
+      DB_PASSWORD: $DB_PASSWORD
+      DB_NAME: $DB_NAME
+      DRUPAL_CONFIG_SYNC_DIRECTORY: /var/www/html/config/sync
 #      DB_DRIVER: $DB_DRIVER
 #      DRUSH_OPTIONS_URI: "http://${PROJECT_BASE_URL}:${PROJECT_PORT}"
 #      PHP_FPM_USER: wodby

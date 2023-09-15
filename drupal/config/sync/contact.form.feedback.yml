@@ -1,0 +1,14 @@
+uuid: b7e59885-5345-4ecd-bf5e-e495a44a1260
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - mohamed.rez@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
