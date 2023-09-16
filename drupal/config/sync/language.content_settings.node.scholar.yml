@@ -1,0 +1,16 @@
+uuid: ab638666-018b-41dc-bf6d-9e951e6cc065
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scholar
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.scholar
+target_entity_type_id: node
+target_bundle: scholar
+default_langcode: site_default
+language_alterable: true

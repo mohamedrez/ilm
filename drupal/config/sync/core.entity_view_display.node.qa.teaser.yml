@@ -1,0 +1,35 @@
+uuid: fdab6620-8c49-4000-946c-4a71f75bd7c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.qa.body
+    - field.field.node.qa.field_answer
+    - field.field.node.qa.field_media
+    - node.type.qa
+  module:
+    - text
+    - user
+id: node.qa.teaser
+targetEntityType: node
+bundle: qa
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_answer: true
+  field_media: true
+  langcode: true

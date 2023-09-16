@@ -1,0 +1,31 @@
+uuid: ea372748-dd36-4d30-83cf-0484d12214bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scholar.body
+    - node.type.scholar
+  module:
+    - text
+    - user
+id: node.scholar.teaser
+targetEntityType: node
+bundle: scholar
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

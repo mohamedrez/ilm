@@ -1,0 +1,35 @@
+uuid: 2b0f1a10-34ea-4b25-ba1b-becf4bf76431
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.explanation.body
+    - field.field.node.explanation.field_explainer
+    - field.field.node.explanation.field_media
+    - node.type.explanation
+  module:
+    - text
+    - user
+id: node.explanation.teaser
+targetEntityType: node
+bundle: explanation
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_explainer: true
+  field_media: true
+  langcode: true

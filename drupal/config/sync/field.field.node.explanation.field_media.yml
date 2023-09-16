@@ -1,0 +1,27 @@
+uuid: a08dcab8-5dd5-48d0-9d10-16324dee72c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.explanation
+  module:
+    - file
+id: node.explanation.field_media
+field_name: field_media
+entity_type: node
+bundle: explanation
+label: media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt mp3 mp4'
+  max_filesize: ''
+  description_field: false
+field_type: file

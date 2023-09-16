@@ -1,0 +1,29 @@
+uuid: ce8251f3-2b1a-483f-a3e2-cb5d76789db6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.scholar.body
+    - node.type.scholar
+  module:
+    - text
+    - user
+id: node.scholar.default
+targetEntityType: node
+bundle: scholar
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

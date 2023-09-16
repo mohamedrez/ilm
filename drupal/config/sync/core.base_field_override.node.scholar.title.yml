@@ -1,0 +1,18 @@
+uuid: 6bf7b728-6864-4121-9890-844113bc61b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scholar
+id: node.scholar.title
+field_name: title
+entity_type: node
+bundle: scholar
+label: 'Full Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

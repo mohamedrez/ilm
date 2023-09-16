@@ -1,0 +1,50 @@
+uuid: 93ab40ea-aea7-41c1-85c7-6c3ebc6a470e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.qa.body
+    - field.field.node.qa.field_answer
+    - field.field.node.qa.field_media
+    - node.type.qa
+  module:
+    - file
+    - text
+    - user
+id: node.qa.default
+targetEntityType: node
+bundle: qa
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_answer:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_media:
+    type: file_audio
+    label: above
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

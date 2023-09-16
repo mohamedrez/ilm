@@ -1,0 +1,16 @@
+uuid: 51377684-df4e-4009-aae2-f3d1c4d77529
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.qa
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.qa
+target_entity_type_id: node
+target_bundle: qa
+default_langcode: site_default
+language_alterable: true

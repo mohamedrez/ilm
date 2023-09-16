@@ -1,0 +1,29 @@
+uuid: e75d1a5b-8e88-4281-baa6-015f33f2eb32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_explainer
+    - node.type.explanation
+    - node.type.scholar
+id: node.explanation.field_explainer
+field_name: field_explainer
+entity_type: node
+bundle: explanation
+label: explainer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      scholar: scholar
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
