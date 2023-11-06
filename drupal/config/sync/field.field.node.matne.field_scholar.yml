@@ -1,0 +1,29 @@
+uuid: 5b5d71ec-a759-47b5-825d-abbaaace6cfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scholar
+    - node.type.matne
+    - node.type.scholar
+id: node.matne.field_scholar
+field_name: field_scholar
+entity_type: node
+bundle: matne
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      scholar: scholar
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

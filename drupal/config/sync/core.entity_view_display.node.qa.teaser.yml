@@ -6,7 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.qa.body
     - field.field.node.qa.field_answer
+    - field.field.node.qa.field_domain_access
+    - field.field.node.qa.field_domain_all_affiliates
     - field.field.node.qa.field_media
+    - field.field.node.qa.field_scholar
     - node.type.qa
   module:
     - text
@@ -31,5 +34,8 @@ content:
     region: content
 hidden:
   field_answer: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
   field_media: true
+  field_scholar: true
   langcode: true

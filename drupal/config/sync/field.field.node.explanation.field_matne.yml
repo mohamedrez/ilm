@@ -1,0 +1,29 @@
+uuid: 2a39fc09-d6ea-4063-a157-17fb956a2ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_matne
+    - node.type.explanation
+    - node.type.matne
+id: node.explanation.field_matne
+field_name: field_matne
+entity_type: node
+bundle: explanation
+label: matne
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      matne: matne
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

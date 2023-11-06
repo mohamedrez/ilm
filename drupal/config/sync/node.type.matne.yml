@@ -1,0 +1,17 @@
+uuid: 4f04a5a9-2e1c-4f24-8974-cba7f1f65f79
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Matne
+type: matne
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

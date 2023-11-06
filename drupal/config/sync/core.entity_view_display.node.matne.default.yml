@@ -1,0 +1,51 @@
+uuid: df292527-f1f9-4fea-889b-64c5e753de32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.matne.body
+    - field.field.node.matne.field_domain_access
+    - field.field.node.matne.field_domain_all_affiliates
+    - field.field.node.matne.field_scholar
+    - field.field.node.matne.field_tags
+    - node.type.matne
+  module:
+    - text
+    - user
+id: node.matne.default
+targetEntityType: node
+bundle: matne
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_scholar:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  langcode: true

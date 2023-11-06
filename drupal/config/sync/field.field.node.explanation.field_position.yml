@@ -1,0 +1,23 @@
+uuid: 4e690219-9bb4-443e-a0f5-38c3bc29021d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.explanation
+id: node.explanation.field_position
+field_name: field_position
+entity_type: node
+bundle: explanation
+label: position
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

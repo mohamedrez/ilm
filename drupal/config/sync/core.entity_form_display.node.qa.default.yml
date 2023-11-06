@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.node.qa.body
     - field.field.node.qa.field_answer
+    - field.field.node.qa.field_domain_access
+    - field.field.node.qa.field_domain_all_affiliates
     - field.field.node.qa.field_media
+    - field.field.node.qa.field_scholar
     - node.type.qa
   module:
     - file
@@ -40,12 +43,35 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 41
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_media:
     type: file_generic
     weight: 123
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_scholar:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

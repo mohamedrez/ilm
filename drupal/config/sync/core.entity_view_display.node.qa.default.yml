@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.node.qa.body
     - field.field.node.qa.field_answer
+    - field.field.node.qa.field_domain_access
+    - field.field.node.qa.field_domain_all_affiliates
     - field.field.node.qa.field_media
+    - field.field.node.qa.field_scholar
     - node.type.qa
   module:
     - file
@@ -41,10 +44,20 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_scholar:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
   langcode: true

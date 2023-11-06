@@ -1,0 +1,22 @@
+uuid: 294bffa0-ed26-468e-86d8-a8ea83fc8bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.matne
+id: node.matne.promote
+field_name: promote
+entity_type: node
+bundle: matne
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

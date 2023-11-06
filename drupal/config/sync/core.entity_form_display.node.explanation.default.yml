@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.explanation.body
-    - field.field.node.explanation.field_explainer
-    - field.field.node.explanation.field_media
+    - field.field.node.explanation.field_audio
+    - field.field.node.explanation.field_domain_access
+    - field.field.node.explanation.field_domain_all_affiliates
+    - field.field.node.explanation.field_matne
+    - field.field.node.explanation.field_position
+    - field.field.node.explanation.field_scholar
     - node.type.explanation
   module:
     - file
@@ -32,9 +36,29 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_explainer:
+  field_audio:
+    type: file_generic
+    weight: 124
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    weight: 41
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_matne:
     type: entity_reference_autocomplete
-    weight: 122
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -42,12 +66,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_media:
-    type: file_generic
-    weight: 123
+  field_position:
+    type: number
+    weight: 125
     region: content
     settings:
-      progress_indicator: throbber
+      placeholder: ''
+    third_party_settings: {  }
+  field_scholar:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

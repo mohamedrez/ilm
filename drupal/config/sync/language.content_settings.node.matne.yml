@@ -1,0 +1,16 @@
+uuid: 7b8d864a-0bed-4cf6-acdd-34d079dfe5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.matne
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.matne
+target_entity_type_id: node
+target_bundle: matne
+default_langcode: site_default
+language_alterable: false

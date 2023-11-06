@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.explanation.body
-    - field.field.node.explanation.field_explainer
-    - field.field.node.explanation.field_media
+    - field.field.node.explanation.field_audio
+    - field.field.node.explanation.field_domain_access
+    - field.field.node.explanation.field_domain_all_affiliates
+    - field.field.node.explanation.field_matne
+    - field.field.node.explanation.field_position
+    - field.field.node.explanation.field_scholar
     - node.type.explanation
   module:
     - text
@@ -30,6 +34,10 @@ content:
     weight: 100
     region: content
 hidden:
-  field_explainer: true
-  field_media: true
+  field_audio: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_matne: true
+  field_position: true
+  field_scholar: true
   langcode: true
